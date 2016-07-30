@@ -9,7 +9,8 @@
 #import "YBCurriculumScheduleController.h"
 #import "YBCurriculumScheduleConst.h"
 #import "YBCurriculumScheduleCell.h"
-
+#import "MJRefresh.h"
+#import "MJDIYBackFooter.h"
 @interface YBCurriculumScheduleController ()
 <
 UITableViewDataSource,
@@ -58,7 +59,14 @@ UITableViewDelegate
  *  Cell星期数组
  */
 @property (nonatomic,strong) NSArray * cellWeekArray;
-
+/**
+ *  当前周是否是本周
+ */
+@property (nonatomic, assign) BOOL isThisWeek;
+/**
+ *  计录一下本周的第一天
+ */
+@property (nonatomic, copy) NSString * thisWeekFirstDay;
 @end
 
 @implementation YBCurriculumScheduleController
@@ -67,7 +75,7 @@ UITableViewDelegate
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"课表";
-    
+    self.isThisWeek = YES;
     [self createCSHeaderView];
     [self createCSFooterView];
     
@@ -75,20 +83,115 @@ UITableViewDelegate
     [self calculationCurrentWeek];
     
     //获取这一周的日期
-//    [self getTheCurrentDateWeek];
+    [self getTheCurrentDateWeek];
     
     //初始化tableView
     [self createTableView];
     
+    [self createPullDownRefresh];
     //加载数据
     //    [self loadData];
     //    self.isFirstTime = NO;
 }
+#pragma mark - 上下拉刷新
+-(void)createPullDownRefresh
+{
+    // 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadNewData方法）
+    MJRefreshNormalHeader * header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
+    
+    // 设置文字
+    [header setTitle:@"加载上周课表" forState:MJRefreshStateIdle];
+    [header setTitle:@"松开立即加载" forState:MJRefreshStatePulling];
+    [header setTitle:@"加载中..." forState:MJRefreshStateRefreshing];
+    
+    // 设置字体
+    header.stateLabel.font = [UIFont systemFontOfSize:15];
+    header.lastUpdatedTimeLabel.font = [UIFont systemFontOfSize:11];
+    
+    // 设置颜色
+    header.stateLabel.textColor = CSMainColor;
+    header.lastUpdatedTimeLabel.textColor = [UIColor blackColor];
+    
+    // 设置刷新控件
+    self.tableView.mj_header = header;
+    
+    // 添加上拉刷新
+    // 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadMoreData方法）
+    self.tableView.mj_footer = [MJDIYBackFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
+}
+
+#pragma mark 上拉加载下一周
+- (void)loadMoreData
+{
+//    [self ResetDateArray];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [self.tableView.mj_footer endRefreshing];
+        [self.tableView.mj_header endRefreshing];
+    });
+    //是否是本周
+    self.isThisWeek = NO;
+
+    [self.currentWeekArray removeAllObjects];
+    NSString * nextWeekStr = [YBDateTools CalculateTheDate:self.endTime OfADay:7 BeforeOrAfter:NO];
+    
+    self.currentWeekArray = [YBDateTools calendarWithLastDay:nextWeekStr];
+    
+    //重置开始日期和结束日期
+    [self resetStarTimeAndEndTime];
+    //重置头视图的日期间隔
+    [self resetHeaderViewCurrentTimeLabel];
+    //重置头视图的月份或者是本周
+
+    // 刷新表格
+    [self.tableView reloadData];
+}
+
+#pragma mark - 下拉加载上一周
+-(void)loadNewData
+{
+//    [self ResetDateArray];
+    self.isThisWeek = NO;
+    
+    [self.currentWeekArray removeAllObjects];
+    
+    self.currentWeekArray = [YBDateTools calendarWithLastDay:self.starTime];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.3 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [self.tableView.mj_footer endRefreshing];
+        [self.tableView.mj_header endRefreshing];
+    });
+    // 刷新表格
+    [self.tableView reloadData];
+    
+    //重置开始日期和结束日期
+    [self resetStarTimeAndEndTime];
+    //重置头视图的日期间隔
+    [self resetHeaderViewCurrentTimeLabel];
+    //重置头视图的月份或者是本周
+//    [self currentMonthLabel:[HMCityStr sharedHMCityStr].isToDay];
+}
+
+#pragma mark - 重置开始日期和结束日期
+-(void)resetStarTimeAndEndTime
+{
+    self.starTime = [self.currentWeekArray firstObject];
+    if ([self.thisWeekFirstDay isEqualToString:self.starTime]) {
+        self.isThisWeek = YES;
+    }
+    [self currentHeaderMonthLabel];
+    self.endTime = [self.currentWeekArray lastObject];
+    
+    self.endTime = [YBDateTools CalculateTheDate:self.endTime OfADay:1 BeforeOrAfter:NO];
+
+    //下一周的数据
+    [self getNextDateWeek];
+    
+    //加载数据
+//    [self loadData];
+}
+
 -(void)createTableView
 {
-    
-//    self.cellHeight = (MytimeTable) / 7;
-    
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 104, CSScreenWidth, MytimeTable) style:UITableViewStylePlain];
     self.tableView.rowHeight = self.tableView.frame.size.height / 7;
     
@@ -96,9 +199,6 @@ UITableViewDelegate
 
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    
-    //取消cell分割线
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
 //    [self pullToRefresh];
     
@@ -114,17 +214,24 @@ UITableViewDelegate
 #pragma mark - 创建cell
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     YBCurriculumScheduleCell * CurriculumScheduleCell = [YBCurriculumScheduleCell curriculumScheduleCellWithTableView:tableView];
     
-//    CurriculumScheduleCell.week = self.cellWeekArray[indexPath.row];
-//    if (self.currentWeek == indexPath.row && [HMCityStr sharedHMCityStr].isToDay) {
-//        myTimeCell.isCurrentWeek = YES;
-//    }else{
-//        myTimeCell.isCurrentWeek = NO;
-//    }
+    CurriculumScheduleCell.weekStr = self.cellWeekArray[indexPath.row];
     
-//    myTimeCell.currentDate = [self stringDateFromTimeSp:self.currentWeekArray[indexPath.row]];
+    CurriculumScheduleCell.currentDate = [YBDateTools stringDateFromTimeSp:self.currentWeekArray[indexPath.row]];
+    if (self.isThisWeek) {
+        NSDate *postDate = [NSDate dateWithTimeIntervalSince1970:[self.currentWeekArray[indexPath.row] integerValue]];
+        
+        // 判断是否今天
+        if ([postDate isToday]){
+            CurriculumScheduleCell.isCurrentWeek = YES;
+        }else{
+            CurriculumScheduleCell.isCurrentWeek = NO;
+        }
+    }else{
+        CurriculumScheduleCell.isCurrentWeek = NO;
+    }
+    
 //    //    myTimeCell.myTimeTableModel = self.dataArray[];
 //    myTimeCell.weekDataArray = [self isWeek:indexPath.row];
     
@@ -146,13 +253,13 @@ UITableViewDelegate
     //下一周的数据
     [self getNextDateWeek];
 }
+
 #pragma mark - 获取下一周的日期
 -(void)getNextDateWeek
 {
-//    [HMCityStr sharedHMCityStr].isLoadNextWeek = YES;
-    
     NSString * nextWeekStr = [YBDateTools CalculateTheDate:self.endTime OfADay:7 BeforeOrAfter:NO];
-    self.NextWeekArray = [self getDateWeekEndTime:nextWeekStr];
+    
+    self.NextWeekArray = [YBDateTools calendarWithLastDay:nextWeekStr];
     
     NSString * startWeekTime = [YBDateTools stringDateFromTimeSp:[self.NextWeekArray firstObject]];
     NSString * endWeekTime = [YBDateTools stringDateFromTimeSp:[self.NextWeekArray lastObject]];
@@ -163,21 +270,6 @@ UITableViewDelegate
     self.currentMonthFooterLabel.text = [NSString stringWithFormat:@"%@月",arrayStartStr[0]];
     
     self.currentTimeFooterLabel.text = [NSString stringWithFormat:@"%@~%@",arrayStartStr[1],arrayEndStr[1]];
-    
-//    [HMCityStr sharedHMCityStr].isLoadNextWeek = NO;
-}
-#pragma mark - 获取某一周的日期
--(NSMutableArray *)getDateWeekEndTime:(NSString *)endTime
-{
-    NSMutableArray * array = [YBDateTools calendarWithLastDay:endTime];
-    NSMutableArray * dateArray = [NSMutableArray arrayWithCapacity:7];
-    
-//    for (HMMytimeTableDateList *babyList in array) {
-//        for (NSString * dateStr in babyList.days) {
-//            [dateArray addObject:dateStr];
-//        }
-//    }
-    return dateArray;
 }
 
 //重置头视图的日期间隔
@@ -205,7 +297,7 @@ UITableViewDelegate
     
     //开始时间
     self.starTime = [self.currentWeekDict objectForKey:@"starTime"];
-    
+    self.thisWeekFirstDay = self.starTime;
     //结束时间
     self.endTime = [self.currentWeekDict objectForKey:@"endTime"];
 }
@@ -257,18 +349,44 @@ UITableViewDelegate
 #pragma mark - 返回本周
 -(void)backCurrentWeekBtn:(UIButton *)btn
 {
-//    //是否是本周
-//    [HMCityStr sharedHMCityStr].isToDay = YES;
-//    [self CurrentMonthLabel:[HMCityStr sharedHMCityStr].isToDay];
-//    
-//    self.isFirstTime = YES;
-//    //计算一周的开始和结束时间
-//    [self calculationWeek];
-//    
-//    //获取这一周的日期
-//    [self getTheCurrentDateWeek];
-//    
-//    [self.tableView reloadData];
+    if (self.isThisWeek) {
+        return;
+    }
+    //是否是本周
+    self.isThisWeek = YES;
+    
+    [self currentHeaderMonthLabel];
+
+    //计算一周的开始和结束时间
+    [self calculationCurrentWeek];
+    
+    //获取这一周的日期
+    [self getTheCurrentDateWeek];
+    
+    [self.tableView reloadData];
+}
+
+-(void)currentHeaderMonthLabel
+{
+    NSString * monthStr = [[self stringDateFromTimeSp2:[self.currentWeekArray firstObject]] substringToIndex:3];
+    
+    self.currentMonthLabel.text = (self.isThisWeek)?@"本周":monthStr;
+}
+
+- (NSString *)stringDateFromTimeSp2:(NSString *)timeSp{
+    
+    if (timeSp.integerValue < 1) {
+        return @"未填写";
+    }
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MM月dd日"];
+    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"]];
+    NSDate *datett = [NSDate dateWithTimeIntervalSince1970:timeSp.integerValue];
+    
+    NSString *resultString =[dateFormatter stringFromDate:datett];
+    
+    return resultString;
 }
 
 #pragma mark - 课表头视图

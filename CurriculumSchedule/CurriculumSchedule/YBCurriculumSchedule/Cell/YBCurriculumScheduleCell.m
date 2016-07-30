@@ -84,6 +84,7 @@
     }
     return self;
 }
+
 -(void)createCellView
 {
     CGFloat viewHeight = (MytimeTable)/7;
@@ -94,7 +95,6 @@
     //线条
     [bgView addLineWithType:BMLineTypeCustomDefault color:RGBA(208, 208, 208, 1) position:BMLinePostionCustomBottom];
     [self.contentView addSubview:bgView];
-    
     
     //本周
     UIView * weekView = [YBControl createViewWithFrame:CGRectMake(0, 0, 60, viewHeight-1)];
@@ -138,6 +138,44 @@
     
     self.CourseView = CourseView;
     [self.bgView addSubview:CourseView];
+}
+
+-(void)setWeekStr:(NSString *)weekStr
+{
+    _weekStr = weekStr;
+
+    self.currentMonthLabel.text = weekStr;
+}
+
+-(void)setCurrentDate:(NSString *)currentDate
+{
+    _currentDate = currentDate;
+    
+    self.currentTimeLabel.text = currentDate;
+}
+
+-(void)setIsCurrentWeek:(BOOL)isCurrentWeek
+{
+    _isCurrentWeek = isCurrentWeek;
+    
+    if (isCurrentWeek) {
+        self.RoundView.hidden = NO;
+        
+        self.currentMonthLabel.textColor = [UIColor whiteColor];
+        
+        self.currentTimeLabel.textColor = [UIColor whiteColor];
+        
+        self.bgView.backgroundColor = RGBA(248, 248, 248, 1);
+        
+    }else{
+        self.RoundView.hidden = YES;
+        
+        self.bgView.backgroundColor = RGBA(238, 238, 238, 1);
+        
+        self.currentMonthLabel.textColor = [UIColor blackColor];
+        
+        self.currentTimeLabel.textColor = RGBA(129, 129, 129, 1);
+    }
 }
 
 @end

@@ -13,5 +13,17 @@
  *  创建cell
  */
 + (instancetype)curriculumScheduleCellWithTableView:(UITableView *)tableView;
+/**
+ *  星期
+ */
+@property (nonatomic,copy) NSString * weekStr;
+/**
+ *  当前日期
+ */
+@property (nonatomic,copy) NSString * currentDate;
+/**
+ *  是否是当前星期
+ */
+@property (nonatomic,assign) BOOL isCurrentWeek;
 
 @end

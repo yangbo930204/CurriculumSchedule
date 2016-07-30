@@ -77,6 +77,7 @@
     
     return [NSDictionary dictionaryWithObjectsAndKeys:starTime,@"starTime",endTime,@"endTime", nil];
 }
+
 #pragma mark - 根据一个星期的最后一天返回一周的日历数组
 + (NSMutableArray *)calendarWithLastDay:(NSString *)lastDayStr{
 
@@ -99,22 +100,20 @@
     NSDateComponents *babyDueStartComponents = [fcalendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:startDate]; // 周一
     
     NSMutableArray *babyCalList = [[NSMutableArray alloc] init];
+    
     for (int i= 0; i < 7; i++) {
         
-        NSMutableArray *weekM = [[NSMutableArray alloc] init];
+        if (startTime > endTime) {
+            break;
+        }
         
-        for (int j = 0; j < 1; j++) {
-            if (startTime > endTime) {
-                break;
-            }
-            
-            NSDate *startDueDate = [NSDate dateWithTimeIntervalSince1970:startTime];
-            NSDateComponents *dayOfWeekComponents = [fcalendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekCalendarUnit | NSWeekdayCalendarUnit | NSWeekOfMonthCalendarUnit | NSWeekOfYearCalendarUnit fromDate:startDueDate];
-            
-            NSString * dateStr = [NSString stringWithFormat:@"%ld",startTime];
-            
+        NSDate *startDueDate = [NSDate dateWithTimeIntervalSince1970:startTime];
+        NSDateComponents *dayOfWeekComponents = [fcalendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekCalendarUnit | NSWeekdayCalendarUnit | NSWeekOfMonthCalendarUnit | NSWeekOfYearCalendarUnit fromDate:startDueDate];
+        
+        NSString * dateStr = [NSString stringWithFormat:@"%ld",startTime];
+        
 //            NSDate *postDate = [NSDate dateWithTimeIntervalSince1970:startTime];
-            // 时间判断
+        // 时间判断
 //            if ([postDate isToday] && ![HMCityStr sharedHMCityStr].isLoadNextWeek) {   //是今天
 //                [HMCityStr sharedHMCityStr].isToDay = YES;
 //                
@@ -122,25 +121,21 @@
 //                [HMCityStr sharedHMCityStr].isToDay = NO;
 //                
 //            }
-            
-            [weekM addObject:dateStr];
-            
-            days += 1;
-            if (babyDueStartComponents.day == dayOfWeekComponents.day) {
-                months += 1;
-            }
-            startTime += 86400;
-            if (dayOfWeekComponents.weekday == 1) {
-                break;
-            }
-        }
-        weekStr += 1;
         
-//        HMMytimeTableDateList *CalendarList = [[HMMytimeTableDateList alloc] init];
-//        CalendarList.days = weekM;
-//        
-//        [babyCalList addObject:CalendarList];
+        [babyCalList addObject:dateStr];
+        
+        days += 1;
+        if (babyDueStartComponents.day == dayOfWeekComponents.day) {
+            months += 1;
+        }
+        startTime += 86400;
+        if (dayOfWeekComponents.weekday == 1) {
+            break;
+        }
+
+        weekStr += 1;
     }
+    
     return babyCalList;
 }
 
@@ -213,6 +208,7 @@
     }
     return [self stringTimeSpFromDate:date2];
 }
+
 + (NSInteger)stringTimeFromTimeSp:(NSString *)timeSp{
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];

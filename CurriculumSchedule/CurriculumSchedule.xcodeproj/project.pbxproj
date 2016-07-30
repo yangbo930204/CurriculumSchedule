@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D15440061D4C73700099089C /* curriculum_shuaxin_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D15440041D4C73700099089C /* curriculum_shuaxin_nor@2x.png */; };
-		D15440071D4C73700099089C /* curriculum_shuaxin_nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D15440051D4C73700099089C /* curriculum_shuaxin_nor@3x.png */; };
-		D1809CE11D4BA99A0082D9F0 /* NSDate+YBTime.m in Sources */ = {isa = PBXBuildFile; fileRef = D1809CE01D4BA99A0082D9F0 /* NSDate+YBTime.m */; };
-		D1809CE41D4BAA360082D9F0 /* YBDateListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1809CE31D4BAA360082D9F0 /* YBDateListModel.m */; };
-		D1809CE71D4BAF030082D9F0 /* YBDateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = D1809CE61D4BAF030082D9F0 /* YBDateTools.m */; };
+		D12FA29F1D4CB5140088C41B /* YBCurriculumScheduleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D12FA27D1D4CB5140088C41B /* YBCurriculumScheduleCell.m */; };
+		D12FA2A01D4CB5140088C41B /* BMLineCumstomDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = D12FA2821D4CB5140088C41B /* BMLineCumstomDefault.m */; };
+		D12FA2A11D4CB5140088C41B /* UIView+BMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = D12FA2841D4CB5140088C41B /* UIView+BMLine.m */; };
+		D12FA2A21D4CB5140088C41B /* YBCourseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D12FA2871D4CB5140088C41B /* YBCourseModel.m */; };
+		D12FA2A31D4CB5140088C41B /* YBDateListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D12FA2891D4CB5140088C41B /* YBDateListModel.m */; };
+		D12FA2A41D4CB5140088C41B /* NSDate+YBTime.m in Sources */ = {isa = PBXBuildFile; fileRef = D12FA28C1D4CB5140088C41B /* NSDate+YBTime.m */; };
+		D12FA2A51D4CB5140088C41B /* YBControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D12FA28E1D4CB5140088C41B /* YBControl.m */; };
+		D12FA2A61D4CB5140088C41B /* YBCurriculumScheduleConst.m in Sources */ = {isa = PBXBuildFile; fileRef = D12FA2901D4CB5140088C41B /* YBCurriculumScheduleConst.m */; };
+		D12FA2A71D4CB5140088C41B /* YBDateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = D12FA2921D4CB5140088C41B /* YBDateTools.m */; };
+		D12FA2A81D4CB5140088C41B /* curriculum_shuaxin_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D12FA2951D4CB5140088C41B /* curriculum_shuaxin_nor@2x.png */; };
+		D12FA2A91D4CB5140088C41B /* curriculum_shuaxin_nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D12FA2961D4CB5140088C41B /* curriculum_shuaxin_nor@3x.png */; };
+		D12FA2AA1D4CB5140088C41B /* YBCourseDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D12FA2981D4CB5140088C41B /* YBCourseDetailsView.m */; };
+		D12FA2AB1D4CB5140088C41B /* YBCourseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D12FA29A1D4CB5140088C41B /* YBCourseView.m */; };
+		D12FA2AC1D4CB5140088C41B /* YBUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D12FA29C1D4CB5140088C41B /* YBUILabel.m */; };
+		D12FA2AD1D4CB5140088C41B /* YBCurriculumScheduleController.m in Sources */ = {isa = PBXBuildFile; fileRef = D12FA29E1D4CB5140088C41B /* YBCurriculumScheduleController.m */; };
 		D19531961D4B99DC00A4742D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D19531951D4B99DC00A4742D /* main.m */; };
 		D19531991D4B99DC00A4742D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D19531981D4B99DC00A4742D /* AppDelegate.m */; };
 		D19531A11D4B99DC00A4742D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D19531A01D4B99DC00A4742D /* Assets.xcassets */; };
 		D19531A41D4B99DC00A4742D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D19531A21D4B99DC00A4742D /* LaunchScreen.storyboard */; };
 		D19531AF1D4B99DC00A4742D /* CurriculumScheduleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D19531AE1D4B99DC00A4742D /* CurriculumScheduleTests.m */; };
 		D19531BA1D4B99DC00A4742D /* CurriculumScheduleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D19531B91D4B99DC00A4742D /* CurriculumScheduleUITests.m */; };
-		D19531CD1D4B9AD500A4742D /* YBCurriculumScheduleController.m in Sources */ = {isa = PBXBuildFile; fileRef = D19531CC1D4B9AD500A4742D /* YBCurriculumScheduleController.m */; };
-		D19531D61D4B9CD000A4742D /* YBCurriculumScheduleConst.m in Sources */ = {isa = PBXBuildFile; fileRef = D19531D51D4B9CD000A4742D /* YBCurriculumScheduleConst.m */; };
-		D19531DD1D4B9D3E00A4742D /* BMLineCumstomDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = D19531DA1D4B9D3E00A4742D /* BMLineCumstomDefault.m */; };
-		D19531DE1D4B9D3E00A4742D /* UIView+BMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = D19531DC1D4B9D3E00A4742D /* UIView+BMLine.m */; };
-		D19531E11D4B9E5400A4742D /* YBControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D19531E01D4B9E5400A4742D /* YBControl.m */; };
-		D1F6B2221D4CA50E002FFF1D /* YBCurriculumScheduleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1F6B2211D4CA50E002FFF1D /* YBCurriculumScheduleCell.m */; };
-		D1F6B2251D4CA848002FFF1D /* YBUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1F6B2241D4CA848002FFF1D /* YBUILabel.m */; };
-		D1F6B2281D4CA958002FFF1D /* YBCourseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1F6B2271D4CA958002FFF1D /* YBCourseView.m */; };
-		D1F6B22B1D4CA99A002FFF1D /* YBCourseDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1F6B22A1D4CA99A002FFF1D /* YBCourseDetailsView.m */; };
-		D1F6B22E1D4CAB01002FFF1D /* YBCourseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1F6B22D1D4CAB01002FFF1D /* YBCourseModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,14 +48,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D15440041D4C73700099089C /* curriculum_shuaxin_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "curriculum_shuaxin_nor@2x.png"; sourceTree = "<group>"; };
-		D15440051D4C73700099089C /* curriculum_shuaxin_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "curriculum_shuaxin_nor@3x.png"; sourceTree = "<group>"; };
-		D1809CDF1D4BA99A0082D9F0 /* NSDate+YBTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+YBTime.h"; sourceTree = "<group>"; };
-		D1809CE01D4BA99A0082D9F0 /* NSDate+YBTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YBTime.m"; sourceTree = "<group>"; };
-		D1809CE21D4BAA360082D9F0 /* YBDateListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBDateListModel.h; sourceTree = "<group>"; };
-		D1809CE31D4BAA360082D9F0 /* YBDateListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBDateListModel.m; sourceTree = "<group>"; };
-		D1809CE51D4BAF030082D9F0 /* YBDateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBDateTools.h; sourceTree = "<group>"; };
-		D1809CE61D4BAF030082D9F0 /* YBDateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBDateTools.m; sourceTree = "<group>"; };
+		D12FA27C1D4CB5140088C41B /* YBCurriculumScheduleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCurriculumScheduleCell.h; sourceTree = "<group>"; };
+		D12FA27D1D4CB5140088C41B /* YBCurriculumScheduleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCurriculumScheduleCell.m; sourceTree = "<group>"; };
+		D12FA2801D4CB5140088C41B /* BMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDefines.h; sourceTree = "<group>"; };
+		D12FA2811D4CB5140088C41B /* BMLineCumstomDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLineCumstomDefault.h; sourceTree = "<group>"; };
+		D12FA2821D4CB5140088C41B /* BMLineCumstomDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLineCumstomDefault.m; sourceTree = "<group>"; };
+		D12FA2831D4CB5140088C41B /* UIView+BMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BMLine.h"; sourceTree = "<group>"; };
+		D12FA2841D4CB5140088C41B /* UIView+BMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BMLine.m"; sourceTree = "<group>"; };
+		D12FA2861D4CB5140088C41B /* YBCourseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCourseModel.h; sourceTree = "<group>"; };
+		D12FA2871D4CB5140088C41B /* YBCourseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCourseModel.m; sourceTree = "<group>"; };
+		D12FA2881D4CB5140088C41B /* YBDateListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBDateListModel.h; sourceTree = "<group>"; };
+		D12FA2891D4CB5140088C41B /* YBDateListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBDateListModel.m; sourceTree = "<group>"; };
+		D12FA28B1D4CB5140088C41B /* NSDate+YBTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+YBTime.h"; sourceTree = "<group>"; };
+		D12FA28C1D4CB5140088C41B /* NSDate+YBTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YBTime.m"; sourceTree = "<group>"; };
+		D12FA28D1D4CB5140088C41B /* YBControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBControl.h; sourceTree = "<group>"; };
+		D12FA28E1D4CB5140088C41B /* YBControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBControl.m; sourceTree = "<group>"; };
+		D12FA28F1D4CB5140088C41B /* YBCurriculumScheduleConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCurriculumScheduleConst.h; sourceTree = "<group>"; };
+		D12FA2901D4CB5140088C41B /* YBCurriculumScheduleConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCurriculumScheduleConst.m; sourceTree = "<group>"; };
+		D12FA2911D4CB5140088C41B /* YBDateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBDateTools.h; sourceTree = "<group>"; };
+		D12FA2921D4CB5140088C41B /* YBDateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBDateTools.m; sourceTree = "<group>"; };
+		D12FA2951D4CB5140088C41B /* curriculum_shuaxin_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "curriculum_shuaxin_nor@2x.png"; sourceTree = "<group>"; };
+		D12FA2961D4CB5140088C41B /* curriculum_shuaxin_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "curriculum_shuaxin_nor@3x.png"; sourceTree = "<group>"; };
+		D12FA2971D4CB5140088C41B /* YBCourseDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCourseDetailsView.h; sourceTree = "<group>"; };
+		D12FA2981D4CB5140088C41B /* YBCourseDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCourseDetailsView.m; sourceTree = "<group>"; };
+		D12FA2991D4CB5140088C41B /* YBCourseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCourseView.h; sourceTree = "<group>"; };
+		D12FA29A1D4CB5140088C41B /* YBCourseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCourseView.m; sourceTree = "<group>"; };
+		D12FA29B1D4CB5140088C41B /* YBUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBUILabel.h; sourceTree = "<group>"; };
+		D12FA29C1D4CB5140088C41B /* YBUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBUILabel.m; sourceTree = "<group>"; };
+		D12FA29D1D4CB5140088C41B /* YBCurriculumScheduleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCurriculumScheduleController.h; sourceTree = "<group>"; };
+		D12FA29E1D4CB5140088C41B /* YBCurriculumScheduleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCurriculumScheduleController.m; sourceTree = "<group>"; };
 		D19531911D4B99DC00A4742D /* CurriculumSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurriculumSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D19531951D4B99DC00A4742D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D19531971D4B99DC00A4742D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,27 +90,6 @@
 		D19531B51D4B99DC00A4742D /* CurriculumScheduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurriculumScheduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D19531B91D4B99DC00A4742D /* CurriculumScheduleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurriculumScheduleUITests.m; sourceTree = "<group>"; };
 		D19531BB1D4B99DC00A4742D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D19531CB1D4B9AD500A4742D /* YBCurriculumScheduleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCurriculumScheduleController.h; sourceTree = "<group>"; };
-		D19531CC1D4B9AD500A4742D /* YBCurriculumScheduleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCurriculumScheduleController.m; sourceTree = "<group>"; };
-		D19531D41D4B9CD000A4742D /* YBCurriculumScheduleConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCurriculumScheduleConst.h; sourceTree = "<group>"; };
-		D19531D51D4B9CD000A4742D /* YBCurriculumScheduleConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCurriculumScheduleConst.m; sourceTree = "<group>"; };
-		D19531D81D4B9D3E00A4742D /* BMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDefines.h; sourceTree = "<group>"; };
-		D19531D91D4B9D3E00A4742D /* BMLineCumstomDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLineCumstomDefault.h; sourceTree = "<group>"; };
-		D19531DA1D4B9D3E00A4742D /* BMLineCumstomDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLineCumstomDefault.m; sourceTree = "<group>"; };
-		D19531DB1D4B9D3E00A4742D /* UIView+BMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BMLine.h"; sourceTree = "<group>"; };
-		D19531DC1D4B9D3E00A4742D /* UIView+BMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BMLine.m"; sourceTree = "<group>"; };
-		D19531DF1D4B9E5400A4742D /* YBControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBControl.h; sourceTree = "<group>"; };
-		D19531E01D4B9E5400A4742D /* YBControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBControl.m; sourceTree = "<group>"; };
-		D1F6B2201D4CA50E002FFF1D /* YBCurriculumScheduleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCurriculumScheduleCell.h; sourceTree = "<group>"; };
-		D1F6B2211D4CA50E002FFF1D /* YBCurriculumScheduleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCurriculumScheduleCell.m; sourceTree = "<group>"; };
-		D1F6B2231D4CA848002FFF1D /* YBUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBUILabel.h; sourceTree = "<group>"; };
-		D1F6B2241D4CA848002FFF1D /* YBUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBUILabel.m; sourceTree = "<group>"; };
-		D1F6B2261D4CA958002FFF1D /* YBCourseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCourseView.h; sourceTree = "<group>"; };
-		D1F6B2271D4CA958002FFF1D /* YBCourseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCourseView.m; sourceTree = "<group>"; };
-		D1F6B2291D4CA99A002FFF1D /* YBCourseDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCourseDetailsView.h; sourceTree = "<group>"; };
-		D1F6B22A1D4CA99A002FFF1D /* YBCourseDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCourseDetailsView.m; sourceTree = "<group>"; };
-		D1F6B22C1D4CAB01002FFF1D /* YBCourseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCourseModel.h; sourceTree = "<group>"; };
-		D1F6B22D1D4CAB01002FFF1D /* YBCourseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCourseModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +117,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D15440031D4C73700099089C /* image */ = {
+		D12FA27A1D4CB5140088C41B /* YBCurriculumSchedule */ = {
 			isa = PBXGroup;
 			children = (
-				D15440041D4C73700099089C /* curriculum_shuaxin_nor@2x.png */,
-				D15440051D4C73700099089C /* curriculum_shuaxin_nor@3x.png */,
+				D12FA27B1D4CB5140088C41B /* Cell */,
+				D12FA27E1D4CB5140088C41B /* Lib */,
+				D12FA2851D4CB5140088C41B /* Model */,
+				D12FA28A1D4CB5140088C41B /* Tools */,
+				D12FA2931D4CB5140088C41B /* View */,
+				D12FA29D1D4CB5140088C41B /* YBCurriculumScheduleController.h */,
+				D12FA29E1D4CB5140088C41B /* YBCurriculumScheduleController.m */,
+			);
+			path = YBCurriculumSchedule;
+			sourceTree = "<group>";
+		};
+		D12FA27B1D4CB5140088C41B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D12FA27C1D4CB5140088C41B /* YBCurriculumScheduleCell.h */,
+				D12FA27D1D4CB5140088C41B /* YBCurriculumScheduleCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D12FA27E1D4CB5140088C41B /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				D12FA27F1D4CB5140088C41B /* BMLines */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		D12FA27F1D4CB5140088C41B /* BMLines */ = {
+			isa = PBXGroup;
+			children = (
+				D12FA2801D4CB5140088C41B /* BMDefines.h */,
+				D12FA2811D4CB5140088C41B /* BMLineCumstomDefault.h */,
+				D12FA2821D4CB5140088C41B /* BMLineCumstomDefault.m */,
+				D12FA2831D4CB5140088C41B /* UIView+BMLine.h */,
+				D12FA2841D4CB5140088C41B /* UIView+BMLine.m */,
+			);
+			path = BMLines;
+			sourceTree = "<group>";
+		};
+		D12FA2851D4CB5140088C41B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D12FA2861D4CB5140088C41B /* YBCourseModel.h */,
+				D12FA2871D4CB5140088C41B /* YBCourseModel.m */,
+				D12FA2881D4CB5140088C41B /* YBDateListModel.h */,
+				D12FA2891D4CB5140088C41B /* YBDateListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D12FA28A1D4CB5140088C41B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D12FA28B1D4CB5140088C41B /* NSDate+YBTime.h */,
+				D12FA28C1D4CB5140088C41B /* NSDate+YBTime.m */,
+				D12FA28D1D4CB5140088C41B /* YBControl.h */,
+				D12FA28E1D4CB5140088C41B /* YBControl.m */,
+				D12FA28F1D4CB5140088C41B /* YBCurriculumScheduleConst.h */,
+				D12FA2901D4CB5140088C41B /* YBCurriculumScheduleConst.m */,
+				D12FA2911D4CB5140088C41B /* YBDateTools.h */,
+				D12FA2921D4CB5140088C41B /* YBDateTools.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		D12FA2931D4CB5140088C41B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D12FA2941D4CB5140088C41B /* image */,
+				D12FA2971D4CB5140088C41B /* YBCourseDetailsView.h */,
+				D12FA2981D4CB5140088C41B /* YBCourseDetailsView.m */,
+				D12FA2991D4CB5140088C41B /* YBCourseView.h */,
+				D12FA29A1D4CB5140088C41B /* YBCourseView.m */,
+				D12FA29B1D4CB5140088C41B /* YBUILabel.h */,
+				D12FA29C1D4CB5140088C41B /* YBUILabel.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D12FA2941D4CB5140088C41B /* image */ = {
+			isa = PBXGroup;
+			children = (
+				D12FA2951D4CB5140088C41B /* curriculum_shuaxin_nor@2x.png */,
+				D12FA2961D4CB5140088C41B /* curriculum_shuaxin_nor@3x.png */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -149,7 +232,7 @@
 		D19531931D4B99DC00A4742D /* CurriculumSchedule */ = {
 			isa = PBXGroup;
 			children = (
-				D19531CA1D4B9AC100A4742D /* YBCurriculumSche */,
+				D12FA27A1D4CB5140088C41B /* YBCurriculumSchedule */,
 				D19531971D4B99DC00A4742D /* AppDelegate.h */,
 				D19531981D4B99DC00A4742D /* AppDelegate.m */,
 				D19531A01D4B99DC00A4742D /* Assets.xcassets */,
@@ -184,89 +267,6 @@
 				D19531BB1D4B99DC00A4742D /* Info.plist */,
 			);
 			path = CurriculumScheduleUITests;
-			sourceTree = "<group>";
-		};
-		D19531CA1D4B9AC100A4742D /* YBCurriculumSche */ = {
-			isa = PBXGroup;
-			children = (
-				D19531CB1D4B9AD500A4742D /* YBCurriculumScheduleController.h */,
-				D19531CC1D4B9AD500A4742D /* YBCurriculumScheduleController.m */,
-				D19531CE1D4B9B2D00A4742D /* Cell */,
-				D19531CF1D4B9B2D00A4742D /* Lib */,
-				D19531D01D4B9B2D00A4742D /* Model */,
-				D19531D21D4B9B2D00A4742D /* View */,
-				D19531D31D4B9C9E00A4742D /* Tools */,
-			);
-			path = YBCurriculumSche;
-			sourceTree = "<group>";
-		};
-		D19531CE1D4B9B2D00A4742D /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				D1F6B2201D4CA50E002FFF1D /* YBCurriculumScheduleCell.h */,
-				D1F6B2211D4CA50E002FFF1D /* YBCurriculumScheduleCell.m */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		D19531CF1D4B9B2D00A4742D /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				D19531D71D4B9D3E00A4742D /* BMLines */,
-			);
-			path = Lib;
-			sourceTree = "<group>";
-		};
-		D19531D01D4B9B2D00A4742D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D1809CE21D4BAA360082D9F0 /* YBDateListModel.h */,
-				D1809CE31D4BAA360082D9F0 /* YBDateListModel.m */,
-				D1F6B22C1D4CAB01002FFF1D /* YBCourseModel.h */,
-				D1F6B22D1D4CAB01002FFF1D /* YBCourseModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D19531D21D4B9B2D00A4742D /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D1F6B2231D4CA848002FFF1D /* YBUILabel.h */,
-				D1F6B2241D4CA848002FFF1D /* YBUILabel.m */,
-				D15440031D4C73700099089C /* image */,
-				D1F6B2261D4CA958002FFF1D /* YBCourseView.h */,
-				D1F6B2271D4CA958002FFF1D /* YBCourseView.m */,
-				D1F6B2291D4CA99A002FFF1D /* YBCourseDetailsView.h */,
-				D1F6B22A1D4CA99A002FFF1D /* YBCourseDetailsView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		D19531D31D4B9C9E00A4742D /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				D19531DF1D4B9E5400A4742D /* YBControl.h */,
-				D19531E01D4B9E5400A4742D /* YBControl.m */,
-				D19531D41D4B9CD000A4742D /* YBCurriculumScheduleConst.h */,
-				D19531D51D4B9CD000A4742D /* YBCurriculumScheduleConst.m */,
-				D1809CDF1D4BA99A0082D9F0 /* NSDate+YBTime.h */,
-				D1809CE01D4BA99A0082D9F0 /* NSDate+YBTime.m */,
-				D1809CE51D4BAF030082D9F0 /* YBDateTools.h */,
-				D1809CE61D4BAF030082D9F0 /* YBDateTools.m */,
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		D19531D71D4B9D3E00A4742D /* BMLines */ = {
-			isa = PBXGroup;
-			children = (
-				D19531D81D4B9D3E00A4742D /* BMDefines.h */,
-				D19531D91D4B9D3E00A4742D /* BMLineCumstomDefault.h */,
-				D19531DA1D4B9D3E00A4742D /* BMLineCumstomDefault.m */,
-				D19531DB1D4B9D3E00A4742D /* UIView+BMLine.h */,
-				D19531DC1D4B9D3E00A4742D /* UIView+BMLine.m */,
-			);
-			path = BMLines;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,9 +374,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D19531A41D4B99DC00A4742D /* LaunchScreen.storyboard in Resources */,
-				D15440061D4C73700099089C /* curriculum_shuaxin_nor@2x.png in Resources */,
+				D12FA2A81D4CB5140088C41B /* curriculum_shuaxin_nor@2x.png in Resources */,
 				D19531A11D4B99DC00A4742D /* Assets.xcassets in Resources */,
-				D15440071D4C73700099089C /* curriculum_shuaxin_nor@3x.png in Resources */,
+				D12FA2A91D4CB5140088C41B /* curriculum_shuaxin_nor@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,21 +401,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1809CE71D4BAF030082D9F0 /* YBDateTools.m in Sources */,
-				D19531D61D4B9CD000A4742D /* YBCurriculumScheduleConst.m in Sources */,
-				D1F6B22E1D4CAB01002FFF1D /* YBCourseModel.m in Sources */,
-				D1F6B2281D4CA958002FFF1D /* YBCourseView.m in Sources */,
-				D1F6B22B1D4CA99A002FFF1D /* YBCourseDetailsView.m in Sources */,
 				D19531991D4B99DC00A4742D /* AppDelegate.m in Sources */,
+				D12FA2A31D4CB5140088C41B /* YBDateListModel.m in Sources */,
+				D12FA2AB1D4CB5140088C41B /* YBCourseView.m in Sources */,
+				D12FA2A11D4CB5140088C41B /* UIView+BMLine.m in Sources */,
+				D12FA2A01D4CB5140088C41B /* BMLineCumstomDefault.m in Sources */,
+				D12FA2AD1D4CB5140088C41B /* YBCurriculumScheduleController.m in Sources */,
+				D12FA2AC1D4CB5140088C41B /* YBUILabel.m in Sources */,
 				D19531961D4B99DC00A4742D /* main.m in Sources */,
-				D19531DE1D4B9D3E00A4742D /* UIView+BMLine.m in Sources */,
-				D1809CE41D4BAA360082D9F0 /* YBDateListModel.m in Sources */,
-				D19531DD1D4B9D3E00A4742D /* BMLineCumstomDefault.m in Sources */,
-				D19531E11D4B9E5400A4742D /* YBControl.m in Sources */,
-				D1F6B2221D4CA50E002FFF1D /* YBCurriculumScheduleCell.m in Sources */,
-				D1809CE11D4BA99A0082D9F0 /* NSDate+YBTime.m in Sources */,
-				D19531CD1D4B9AD500A4742D /* YBCurriculumScheduleController.m in Sources */,
-				D1F6B2251D4CA848002FFF1D /* YBUILabel.m in Sources */,
+				D12FA2AA1D4CB5140088C41B /* YBCourseDetailsView.m in Sources */,
+				D12FA2A71D4CB5140088C41B /* YBDateTools.m in Sources */,
+				D12FA29F1D4CB5140088C41B /* YBCurriculumScheduleCell.m in Sources */,
+				D12FA2A61D4CB5140088C41B /* YBCurriculumScheduleConst.m in Sources */,
+				D12FA2A51D4CB5140088C41B /* YBControl.m in Sources */,
+				D12FA2A41D4CB5140088C41B /* NSDate+YBTime.m in Sources */,
+				D12FA2A21D4CB5140088C41B /* YBCourseModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

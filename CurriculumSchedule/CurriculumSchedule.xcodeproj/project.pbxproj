@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D15440061D4C73700099089C /* curriculum_shuaxin_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D15440041D4C73700099089C /* curriculum_shuaxin_nor@2x.png */; };
+		D15440071D4C73700099089C /* curriculum_shuaxin_nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D15440051D4C73700099089C /* curriculum_shuaxin_nor@3x.png */; };
+		D1809CE11D4BA99A0082D9F0 /* NSDate+YBTime.m in Sources */ = {isa = PBXBuildFile; fileRef = D1809CE01D4BA99A0082D9F0 /* NSDate+YBTime.m */; };
+		D1809CE41D4BAA360082D9F0 /* YBDateListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1809CE31D4BAA360082D9F0 /* YBDateListModel.m */; };
+		D1809CE71D4BAF030082D9F0 /* YBDateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = D1809CE61D4BAF030082D9F0 /* YBDateTools.m */; };
+		D19531961D4B99DC00A4742D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D19531951D4B99DC00A4742D /* main.m */; };
+		D19531991D4B99DC00A4742D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D19531981D4B99DC00A4742D /* AppDelegate.m */; };
+		D19531A11D4B99DC00A4742D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D19531A01D4B99DC00A4742D /* Assets.xcassets */; };
+		D19531A41D4B99DC00A4742D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D19531A21D4B99DC00A4742D /* LaunchScreen.storyboard */; };
+		D19531AF1D4B99DC00A4742D /* CurriculumScheduleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D19531AE1D4B99DC00A4742D /* CurriculumScheduleTests.m */; };
+		D19531BA1D4B99DC00A4742D /* CurriculumScheduleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D19531B91D4B99DC00A4742D /* CurriculumScheduleUITests.m */; };
+		D19531CD1D4B9AD500A4742D /* YBCurriculumScheduleController.m in Sources */ = {isa = PBXBuildFile; fileRef = D19531CC1D4B9AD500A4742D /* YBCurriculumScheduleController.m */; };
+		D19531D61D4B9CD000A4742D /* YBCurriculumScheduleConst.m in Sources */ = {isa = PBXBuildFile; fileRef = D19531D51D4B9CD000A4742D /* YBCurriculumScheduleConst.m */; };
+		D19531DD1D4B9D3E00A4742D /* BMLineCumstomDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = D19531DA1D4B9D3E00A4742D /* BMLineCumstomDefault.m */; };
+		D19531DE1D4B9D3E00A4742D /* UIView+BMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = D19531DC1D4B9D3E00A4742D /* UIView+BMLine.m */; };
+		D19531E11D4B9E5400A4742D /* YBControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D19531E01D4B9E5400A4742D /* YBControl.m */; };
+		D1F6B2221D4CA50E002FFF1D /* YBCurriculumScheduleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1F6B2211D4CA50E002FFF1D /* YBCurriculumScheduleCell.m */; };
+		D1F6B2251D4CA848002FFF1D /* YBUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1F6B2241D4CA848002FFF1D /* YBUILabel.m */; };
+		D1F6B2281D4CA958002FFF1D /* YBCourseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1F6B2271D4CA958002FFF1D /* YBCourseView.m */; };
+		D1F6B22B1D4CA99A002FFF1D /* YBCourseDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1F6B22A1D4CA99A002FFF1D /* YBCourseDetailsView.m */; };
+		D1F6B22E1D4CAB01002FFF1D /* YBCourseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1F6B22D1D4CAB01002FFF1D /* YBCourseModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D19531AB1D4B99DC00A4742D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D19531891D4B99DC00A4742D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D19531901D4B99DC00A4742D;
+			remoteInfo = CurriculumSchedule;
+		};
+		D19531B61D4B99DC00A4742D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D19531891D4B99DC00A4742D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D19531901D4B99DC00A4742D;
+			remoteInfo = CurriculumSchedule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D15440041D4C73700099089C /* curriculum_shuaxin_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "curriculum_shuaxin_nor@2x.png"; sourceTree = "<group>"; };
+		D15440051D4C73700099089C /* curriculum_shuaxin_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "curriculum_shuaxin_nor@3x.png"; sourceTree = "<group>"; };
+		D1809CDF1D4BA99A0082D9F0 /* NSDate+YBTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+YBTime.h"; sourceTree = "<group>"; };
+		D1809CE01D4BA99A0082D9F0 /* NSDate+YBTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YBTime.m"; sourceTree = "<group>"; };
+		D1809CE21D4BAA360082D9F0 /* YBDateListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBDateListModel.h; sourceTree = "<group>"; };
+		D1809CE31D4BAA360082D9F0 /* YBDateListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBDateListModel.m; sourceTree = "<group>"; };
+		D1809CE51D4BAF030082D9F0 /* YBDateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBDateTools.h; sourceTree = "<group>"; };
+		D1809CE61D4BAF030082D9F0 /* YBDateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBDateTools.m; sourceTree = "<group>"; };
+		D19531911D4B99DC00A4742D /* CurriculumSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurriculumSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D19531951D4B99DC00A4742D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D19531971D4B99DC00A4742D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D19531981D4B99DC00A4742D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D19531A01D4B99DC00A4742D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D19531A31D4B99DC00A4742D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D19531A51D4B99DC00A4742D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D19531AA1D4B99DC00A4742D /* CurriculumScheduleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurriculumScheduleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D19531AE1D4B99DC00A4742D /* CurriculumScheduleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurriculumScheduleTests.m; sourceTree = "<group>"; };
+		D19531B01D4B99DC00A4742D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D19531B51D4B99DC00A4742D /* CurriculumScheduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurriculumScheduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D19531B91D4B99DC00A4742D /* CurriculumScheduleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurriculumScheduleUITests.m; sourceTree = "<group>"; };
+		D19531BB1D4B99DC00A4742D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D19531CB1D4B9AD500A4742D /* YBCurriculumScheduleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCurriculumScheduleController.h; sourceTree = "<group>"; };
+		D19531CC1D4B9AD500A4742D /* YBCurriculumScheduleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCurriculumScheduleController.m; sourceTree = "<group>"; };
+		D19531D41D4B9CD000A4742D /* YBCurriculumScheduleConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCurriculumScheduleConst.h; sourceTree = "<group>"; };
+		D19531D51D4B9CD000A4742D /* YBCurriculumScheduleConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCurriculumScheduleConst.m; sourceTree = "<group>"; };
+		D19531D81D4B9D3E00A4742D /* BMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDefines.h; sourceTree = "<group>"; };
+		D19531D91D4B9D3E00A4742D /* BMLineCumstomDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLineCumstomDefault.h; sourceTree = "<group>"; };
+		D19531DA1D4B9D3E00A4742D /* BMLineCumstomDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLineCumstomDefault.m; sourceTree = "<group>"; };
+		D19531DB1D4B9D3E00A4742D /* UIView+BMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BMLine.h"; sourceTree = "<group>"; };
+		D19531DC1D4B9D3E00A4742D /* UIView+BMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BMLine.m"; sourceTree = "<group>"; };
+		D19531DF1D4B9E5400A4742D /* YBControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBControl.h; sourceTree = "<group>"; };
+		D19531E01D4B9E5400A4742D /* YBControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBControl.m; sourceTree = "<group>"; };
+		D1F6B2201D4CA50E002FFF1D /* YBCurriculumScheduleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCurriculumScheduleCell.h; sourceTree = "<group>"; };
+		D1F6B2211D4CA50E002FFF1D /* YBCurriculumScheduleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCurriculumScheduleCell.m; sourceTree = "<group>"; };
+		D1F6B2231D4CA848002FFF1D /* YBUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBUILabel.h; sourceTree = "<group>"; };
+		D1F6B2241D4CA848002FFF1D /* YBUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBUILabel.m; sourceTree = "<group>"; };
+		D1F6B2261D4CA958002FFF1D /* YBCourseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCourseView.h; sourceTree = "<group>"; };
+		D1F6B2271D4CA958002FFF1D /* YBCourseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCourseView.m; sourceTree = "<group>"; };
+		D1F6B2291D4CA99A002FFF1D /* YBCourseDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCourseDetailsView.h; sourceTree = "<group>"; };
+		D1F6B22A1D4CA99A002FFF1D /* YBCourseDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCourseDetailsView.m; sourceTree = "<group>"; };
+		D1F6B22C1D4CAB01002FFF1D /* YBCourseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCourseModel.h; sourceTree = "<group>"; };
+		D1F6B22D1D4CAB01002FFF1D /* YBCourseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCourseModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D195318E1D4B99DC00A4742D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19531A71D4B99DC00A4742D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19531B21D4B99DC00A4742D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D15440031D4C73700099089C /* image */ = {
+			isa = PBXGroup;
+			children = (
+				D15440041D4C73700099089C /* curriculum_shuaxin_nor@2x.png */,
+				D15440051D4C73700099089C /* curriculum_shuaxin_nor@3x.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		D19531881D4B99DC00A4742D = {
+			isa = PBXGroup;
+			children = (
+				D19531931D4B99DC00A4742D /* CurriculumSchedule */,
+				D19531AD1D4B99DC00A4742D /* CurriculumScheduleTests */,
+				D19531B81D4B99DC00A4742D /* CurriculumScheduleUITests */,
+				D19531921D4B99DC00A4742D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D19531921D4B99DC00A4742D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D19531911D4B99DC00A4742D /* CurriculumSchedule.app */,
+				D19531AA1D4B99DC00A4742D /* CurriculumScheduleTests.xctest */,
+				D19531B51D4B99DC00A4742D /* CurriculumScheduleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D19531931D4B99DC00A4742D /* CurriculumSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				D19531CA1D4B9AC100A4742D /* YBCurriculumSche */,
+				D19531971D4B99DC00A4742D /* AppDelegate.h */,
+				D19531981D4B99DC00A4742D /* AppDelegate.m */,
+				D19531A01D4B99DC00A4742D /* Assets.xcassets */,
+				D19531A21D4B99DC00A4742D /* LaunchScreen.storyboard */,
+				D19531A51D4B99DC00A4742D /* Info.plist */,
+				D19531941D4B99DC00A4742D /* Supporting Files */,
+			);
+			path = CurriculumSchedule;
+			sourceTree = "<group>";
+		};
+		D19531941D4B99DC00A4742D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D19531951D4B99DC00A4742D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D19531AD1D4B99DC00A4742D /* CurriculumScheduleTests */ = {
+			isa = PBXGroup;
+			children = (
+				D19531AE1D4B99DC00A4742D /* CurriculumScheduleTests.m */,
+				D19531B01D4B99DC00A4742D /* Info.plist */,
+			);
+			path = CurriculumScheduleTests;
+			sourceTree = "<group>";
+		};
+		D19531B81D4B99DC00A4742D /* CurriculumScheduleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D19531B91D4B99DC00A4742D /* CurriculumScheduleUITests.m */,
+				D19531BB1D4B99DC00A4742D /* Info.plist */,
+			);
+			path = CurriculumScheduleUITests;
+			sourceTree = "<group>";
+		};
+		D19531CA1D4B9AC100A4742D /* YBCurriculumSche */ = {
+			isa = PBXGroup;
+			children = (
+				D19531CB1D4B9AD500A4742D /* YBCurriculumScheduleController.h */,
+				D19531CC1D4B9AD500A4742D /* YBCurriculumScheduleController.m */,
+				D19531CE1D4B9B2D00A4742D /* Cell */,
+				D19531CF1D4B9B2D00A4742D /* Lib */,
+				D19531D01D4B9B2D00A4742D /* Model */,
+				D19531D21D4B9B2D00A4742D /* View */,
+				D19531D31D4B9C9E00A4742D /* Tools */,
+			);
+			path = YBCurriculumSche;
+			sourceTree = "<group>";
+		};
+		D19531CE1D4B9B2D00A4742D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D1F6B2201D4CA50E002FFF1D /* YBCurriculumScheduleCell.h */,
+				D1F6B2211D4CA50E002FFF1D /* YBCurriculumScheduleCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D19531CF1D4B9B2D00A4742D /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				D19531D71D4B9D3E00A4742D /* BMLines */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		D19531D01D4B9B2D00A4742D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D1809CE21D4BAA360082D9F0 /* YBDateListModel.h */,
+				D1809CE31D4BAA360082D9F0 /* YBDateListModel.m */,
+				D1F6B22C1D4CAB01002FFF1D /* YBCourseModel.h */,
+				D1F6B22D1D4CAB01002FFF1D /* YBCourseModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D19531D21D4B9B2D00A4742D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1F6B2231D4CA848002FFF1D /* YBUILabel.h */,
+				D1F6B2241D4CA848002FFF1D /* YBUILabel.m */,
+				D15440031D4C73700099089C /* image */,
+				D1F6B2261D4CA958002FFF1D /* YBCourseView.h */,
+				D1F6B2271D4CA958002FFF1D /* YBCourseView.m */,
+				D1F6B2291D4CA99A002FFF1D /* YBCourseDetailsView.h */,
+				D1F6B22A1D4CA99A002FFF1D /* YBCourseDetailsView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D19531D31D4B9C9E00A4742D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D19531DF1D4B9E5400A4742D /* YBControl.h */,
+				D19531E01D4B9E5400A4742D /* YBControl.m */,
+				D19531D41D4B9CD000A4742D /* YBCurriculumScheduleConst.h */,
+				D19531D51D4B9CD000A4742D /* YBCurriculumScheduleConst.m */,
+				D1809CDF1D4BA99A0082D9F0 /* NSDate+YBTime.h */,
+				D1809CE01D4BA99A0082D9F0 /* NSDate+YBTime.m */,
+				D1809CE51D4BAF030082D9F0 /* YBDateTools.h */,
+				D1809CE61D4BAF030082D9F0 /* YBDateTools.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		D19531D71D4B9D3E00A4742D /* BMLines */ = {
+			isa = PBXGroup;
+			children = (
+				D19531D81D4B9D3E00A4742D /* BMDefines.h */,
+				D19531D91D4B9D3E00A4742D /* BMLineCumstomDefault.h */,
+				D19531DA1D4B9D3E00A4742D /* BMLineCumstomDefault.m */,
+				D19531DB1D4B9D3E00A4742D /* UIView+BMLine.h */,
+				D19531DC1D4B9D3E00A4742D /* UIView+BMLine.m */,
+			);
+			path = BMLines;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D19531901D4B99DC00A4742D /* CurriculumSchedule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D19531BE1D4B99DC00A4742D /* Build configuration list for PBXNativeTarget "CurriculumSchedule" */;
+			buildPhases = (
+				D195318D1D4B99DC00A4742D /* Sources */,
+				D195318E1D4B99DC00A4742D /* Frameworks */,
+				D195318F1D4B99DC00A4742D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CurriculumSchedule;
+			productName = CurriculumSchedule;
+			productReference = D19531911D4B99DC00A4742D /* CurriculumSchedule.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D19531A91D4B99DC00A4742D /* CurriculumScheduleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D19531C11D4B99DC00A4742D /* Build configuration list for PBXNativeTarget "CurriculumScheduleTests" */;
+			buildPhases = (
+				D19531A61D4B99DC00A4742D /* Sources */,
+				D19531A71D4B99DC00A4742D /* Frameworks */,
+				D19531A81D4B99DC00A4742D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D19531AC1D4B99DC00A4742D /* PBXTargetDependency */,
+			);
+			name = CurriculumScheduleTests;
+			productName = CurriculumScheduleTests;
+			productReference = D19531AA1D4B99DC00A4742D /* CurriculumScheduleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D19531B41D4B99DC00A4742D /* CurriculumScheduleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D19531C41D4B99DC00A4742D /* Build configuration list for PBXNativeTarget "CurriculumScheduleUITests" */;
+			buildPhases = (
+				D19531B11D4B99DC00A4742D /* Sources */,
+				D19531B21D4B99DC00A4742D /* Frameworks */,
+				D19531B31D4B99DC00A4742D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D19531B71D4B99DC00A4742D /* PBXTargetDependency */,
+			);
+			name = CurriculumScheduleUITests;
+			productName = CurriculumScheduleUITests;
+			productReference = D19531B51D4B99DC00A4742D /* CurriculumScheduleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D19531891D4B99DC00A4742D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YB;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = YB;
+				TargetAttributes = {
+					D19531901D4B99DC00A4742D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					D19531A91D4B99DC00A4742D = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = D19531901D4B99DC00A4742D;
+					};
+					D19531B41D4B99DC00A4742D = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = D19531901D4B99DC00A4742D;
+					};
+				};
+			};
+			buildConfigurationList = D195318C1D4B99DC00A4742D /* Build configuration list for PBXProject "CurriculumSchedule" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D19531881D4B99DC00A4742D;
+			productRefGroup = D19531921D4B99DC00A4742D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D19531901D4B99DC00A4742D /* CurriculumSchedule */,
+				D19531A91D4B99DC00A4742D /* CurriculumScheduleTests */,
+				D19531B41D4B99DC00A4742D /* CurriculumScheduleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D195318F1D4B99DC00A4742D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19531A41D4B99DC00A4742D /* LaunchScreen.storyboard in Resources */,
+				D15440061D4C73700099089C /* curriculum_shuaxin_nor@2x.png in Resources */,
+				D19531A11D4B99DC00A4742D /* Assets.xcassets in Resources */,
+				D15440071D4C73700099089C /* curriculum_shuaxin_nor@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19531A81D4B99DC00A4742D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19531B31D4B99DC00A4742D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D195318D1D4B99DC00A4742D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1809CE71D4BAF030082D9F0 /* YBDateTools.m in Sources */,
+				D19531D61D4B9CD000A4742D /* YBCurriculumScheduleConst.m in Sources */,
+				D1F6B22E1D4CAB01002FFF1D /* YBCourseModel.m in Sources */,
+				D1F6B2281D4CA958002FFF1D /* YBCourseView.m in Sources */,
+				D1F6B22B1D4CA99A002FFF1D /* YBCourseDetailsView.m in Sources */,
+				D19531991D4B99DC00A4742D /* AppDelegate.m in Sources */,
+				D19531961D4B99DC00A4742D /* main.m in Sources */,
+				D19531DE1D4B9D3E00A4742D /* UIView+BMLine.m in Sources */,
+				D1809CE41D4BAA360082D9F0 /* YBDateListModel.m in Sources */,
+				D19531DD1D4B9D3E00A4742D /* BMLineCumstomDefault.m in Sources */,
+				D19531E11D4B9E5400A4742D /* YBControl.m in Sources */,
+				D1F6B2221D4CA50E002FFF1D /* YBCurriculumScheduleCell.m in Sources */,
+				D1809CE11D4BA99A0082D9F0 /* NSDate+YBTime.m in Sources */,
+				D19531CD1D4B9AD500A4742D /* YBCurriculumScheduleController.m in Sources */,
+				D1F6B2251D4CA848002FFF1D /* YBUILabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19531A61D4B99DC00A4742D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19531AF1D4B99DC00A4742D /* CurriculumScheduleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19531B11D4B99DC00A4742D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19531BA1D4B99DC00A4742D /* CurriculumScheduleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D19531AC1D4B99DC00A4742D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D19531901D4B99DC00A4742D /* CurriculumSchedule */;
+			targetProxy = D19531AB1D4B99DC00A4742D /* PBXContainerItemProxy */;
+		};
+		D19531B71D4B99DC00A4742D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D19531901D4B99DC00A4742D /* CurriculumSchedule */;
+			targetProxy = D19531B61D4B99DC00A4742D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D19531A21D4B99DC00A4742D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D19531A31D4B99DC00A4742D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D19531BC1D4B99DC00A4742D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D19531BD1D4B99DC00A4742D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D19531BF1D4B99DC00A4742D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CurriculumSchedule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangbo.CurriculumSchedule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D19531C01D4B99DC00A4742D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CurriculumSchedule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangbo.CurriculumSchedule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D19531C21D4B99DC00A4742D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CurriculumScheduleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangbo.CurriculumScheduleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CurriculumSchedule.app/CurriculumSchedule";
+			};
+			name = Debug;
+		};
+		D19531C31D4B99DC00A4742D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CurriculumScheduleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangbo.CurriculumScheduleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CurriculumSchedule.app/CurriculumSchedule";
+			};
+			name = Release;
+		};
+		D19531C51D4B99DC00A4742D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CurriculumScheduleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangbo.CurriculumScheduleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CurriculumSchedule;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D19531C61D4B99DC00A4742D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CurriculumScheduleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangbo.CurriculumScheduleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CurriculumSchedule;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D195318C1D4B99DC00A4742D /* Build configuration list for PBXProject "CurriculumSchedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19531BC1D4B99DC00A4742D /* Debug */,
+				D19531BD1D4B99DC00A4742D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D19531BE1D4B99DC00A4742D /* Build configuration list for PBXNativeTarget "CurriculumSchedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19531BF1D4B99DC00A4742D /* Debug */,
+				D19531C01D4B99DC00A4742D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D19531C11D4B99DC00A4742D /* Build configuration list for PBXNativeTarget "CurriculumScheduleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19531C21D4B99DC00A4742D /* Debug */,
+				D19531C31D4B99DC00A4742D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D19531C41D4B99DC00A4742D /* Build configuration list for PBXNativeTarget "CurriculumScheduleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19531C51D4B99DC00A4742D /* Debug */,
+				D19531C61D4B99DC00A4742D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D19531891D4B99DC00A4742D /* Project object */;
+}

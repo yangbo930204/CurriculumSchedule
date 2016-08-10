@@ -67,6 +67,7 @@ UITableViewDelegate
  *  计录一下本周的第一天
  */
 @property (nonatomic, copy) NSString * thisWeekFirstDay;
+@property (nonatomic, assign) BOOL isReloadTable;
 @end
 
 @implementation YBCurriculumScheduleController
@@ -75,6 +76,13 @@ UITableViewDelegate
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"课表";
+    
+    NSMutableArray *firstArray = [NSMutableArray array];
+    NSMutableArray *secondArray = [NSMutableArray array];
+    [firstArray addObject:secondArray];
+    [secondArray addObject:firstArray];
+    
+    
     self.isThisWeek = YES;
     [self createCSHeaderView];
     [self createCSFooterView];
@@ -123,11 +131,8 @@ UITableViewDelegate
 #pragma mark 上拉加载下一周
 - (void)loadMoreData
 {
+    self.isReloadTable = NO;
 //    [self ResetDateArray];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        [self.tableView.mj_footer endRefreshing];
-        [self.tableView.mj_header endRefreshing];
-    });
     //是否是本周
     self.isThisWeek = NO;
 
@@ -142,13 +147,21 @@ UITableViewDelegate
     [self resetHeaderViewCurrentTimeLabel];
     //重置头视图的月份或者是本周
 
-    // 刷新表格
-    [self.tableView reloadData];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [self.tableView.mj_footer endRefreshing];
+        [self.tableView.mj_header endRefreshing];
+        // 刷新表格
+        [self.tableView reloadData];
+    });
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.5 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        self.isReloadTable = YES;
+    });
 }
 
 #pragma mark - 下拉加载上一周
 -(void)loadNewData
 {
+    self.isReloadTable = NO;
 //    [self ResetDateArray];
     self.isThisWeek = NO;
     
@@ -159,9 +172,11 @@ UITableViewDelegate
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.3 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
         [self.tableView.mj_footer endRefreshing];
         [self.tableView.mj_header endRefreshing];
+        // 刷新表格
+        [self.tableView reloadData];
+        self.isReloadTable = YES;
     });
-    // 刷新表格
-    [self.tableView reloadData];
+    
     
     //重置开始日期和结束日期
     [self resetStarTimeAndEndTime];
@@ -244,6 +259,20 @@ UITableViewDelegate
     return CurriculumScheduleCell;
 }
 
+//cell即将显示时
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (self.isReloadTable) {
+        //设置Cell的动画效果为3D效果
+        //设置x和y的初始值为0.1；
+        cell.layer.transform = CATransform3DMakeScale(1, 0.6, 1);
+        
+        //x和y的最终值为1
+        [UIView animateWithDuration:0.5 animations:^{
+            cell.layer.transform = CATransform3DMakeScale(1, 1, 1);
+        }];
+    }
+}
 #pragma mark - 获取这一周的日期
 -(void)getTheCurrentDateWeek
 {
